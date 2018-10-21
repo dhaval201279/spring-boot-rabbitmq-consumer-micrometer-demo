@@ -87,23 +87,3 @@ class Reservation implements Serializable {
 		this.lastName = lastName;
 	}
 }
-
-//@Configuration
-/*@EnableReactiveMongoRepositories
-class MongoConfig extends AbstractReactiveMongoConfiguration {
-
-	@Override
-	public MongoClient reactiveMongoClient() {
-		return MongoClients.create();
-	}
-
-	@Override
-	protected String getDatabaseName() {
-		return "test";
-	}
-
-	@Bean
-	public ReactiveMongoTemplate reactiveMongoTemplate() {
-		return new ReactiveMongoTemplate(reactiveMongoClient(), getDatabaseName());
-	}
-}*/
